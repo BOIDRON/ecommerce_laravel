@@ -22,7 +22,7 @@
     <div class="container my-5">
         <div class="orders">
             <h2 class="text-center"> Détails de la Commande</h2>
-            <div class="table-responsive orders_details_table">
+            <div class="table-responsive order_details_table">
                 <div class="d-flex justify-content-between my-5 px-5">
                  <h4>
                     <i class="fas fa-receipt"></i>
@@ -43,6 +43,21 @@
                             <td>Nom du Produit</td>
                             <td>x 1</td>
                             <td>€ 6</td>
+                        </tr>
+                        <tr>
+                            <td><b>Sous Total</b></td>
+                            <td></td>
+                            <td>€ 6</td>
+                        </tr>
+                        <tr>
+                            <td><b>Taxe</b></td>
+                            <td></td>
+                            <td>€ 0.85</td>
+                        </tr>
+                        <tr>
+                            <td><b>Total</b></td>
+                            <td></td>
+                            <td>€ 6.85</td>
                         </tr>
                     </tbody>
                 </table>

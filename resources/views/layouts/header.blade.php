@@ -16,19 +16,19 @@
 						<ul class="nav navbar-nav menu_nav mr-auto ml-2">
 							<li class="nav-item">
                                 <a class="nav-link" href="{{route('home')}}">
-                                    <i class="fas fa-home"></i>
+                                    <i class="fas fa-home"></i><br>
                                 Accueil
                             </a>
                         </li>
 							<li class="nav-item submenu dropdown">
 								<a href="{{route('shop.index')}}" class="nav-link">
-                                 <i class="fas fa-shopping-bag"></i>
+                                 <i class="fas fa-shopping-bag"></i><br>
                                  Boutique
                                 </a>
 							</li>
 							<li class="nav-item">
                                 <a class="nav-link" href="{{route('contact')}}">
-                                    <i class="fas fa-envelope"></i>
+                                    <i class="fas fa-envelope"></i><br>
                                     Contact
                                 </a>
                             </li>
@@ -38,31 +38,31 @@
                         <ul class="nav navbar-nav menu_nav ml-auto">
 							<li class="nav-item">
                                 <a class="nav-link" href="index.html">
-                                    <i class="fas fa-user-plus"></i>
+                                    <i class="fas fa-user-plus"></i><br>
                                 Créer un compte
                             </a>
                         </li>
 							<li class="nav-item submenu dropdown">
 								<a href="#" class="nav-link">
-                                 <i class="fas fa-sign-in-alt"></i>
+                                 <i class="fas fa-sign-in-alt"></i><br>
                                  Se connecter
                                 </a>
 							</li>
 							<li class="nav-item">
-                                <a class="nav-link" href="contact.html">
-                                    <i class="fas fa-truck"></i>
-                                    Order
+                                <a class="nav-link" href="{{route('orders')}}">
+                                    <i class="fas fa-truck"></i><br>
+                                    Commande
                                 </a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="contact.html">
-                                    <i class="fas fa-sign-out-alt"></i>
+                                    <i class="fas fa-sign-out-alt"></i><br>
                                     Se déconnecter
                                 </a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="{{route('cart.index')}}">
-                                    <i class="fas fa-shopping-cart"></i>
+                                    <i class="fas fa-shopping-cart"></i><br>
                                     Panier
                                 </a>
                             </li>
