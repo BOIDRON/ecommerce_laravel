@@ -34,3 +34,8 @@ Route::get('/checkout/success', 'HomeController@success')->name('success');
 
 //Orders
 Route::get('/orders', 'HomeController@orders')->name('orders');
+
+
+Route::group(['prefix' => 'admin'], function () {
+    Voyager::routes();
+});

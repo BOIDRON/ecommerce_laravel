@@ -75,7 +75,8 @@ class ProductsTableSeeder extends Seeder
             'slug' => 'mangue-vanille',
             'details' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum mollis ultricies quam, ac cursus massa fringilla sit amet. Etiam at egestas dui. ',
             'price' => 5,
-            'description' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum mollis ultricies quam, ac cursus massa fringilla sit amet. Etiam at egestas dui. Vestibulum eu justo augue. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Etiam volutpat nunc in ullamcorper bibendum. Integer id dolor turpis. Morbi at leo augue. Nunc eu gravida neque. Vivamus urna dui, egestas sed tincidunt sed, iaculis in leo. '
+            'description' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum mollis ultricies quam, ac cursus massa fringilla sit amet. Etiam at egestas dui. Vestibulum eu justo augue. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Etiam volutpat nunc in ullamcorper bibendum. Integer id dolor turpis. Morbi at leo augue. Nunc eu gravida neque. Vivamus urna dui, egestas sed tincidunt sed, iaculis in leo. ',
+            'category_id'=> Category::all()->random()->id
         ]);
         Product::create([
             'name' => 'Mangue / Orange',
