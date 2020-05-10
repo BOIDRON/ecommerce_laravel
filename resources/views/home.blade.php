@@ -121,18 +121,18 @@
 					</div>
 				</div>
 				<div class="row">
-					@@foreach ($products as $product)
+					@foreach ($products as $product)
 						
-					@endforeach
+					
 			      <!-- single product -->
 					<div class="col-lg-3 col-md-6">
 						<div class="single-product">
 							<img class="img-fluid" src="img/product/p5.jpg" alt="">
 							<div class="product-details">
-								<h6>addidas New Hammer sole
-									for Sports person</h6>
+								<h6>{{$product->name}}</h6>
+								<p>{{$product->details}}</p>
 								<div class="price">
-									<h6>$150.00</h6>
+									<h6>{{$product->price}}</h6>
 									<h6 class="l-through">$210.00</h6>
 								</div>
 								<div class="prd-bottom">
@@ -157,6 +157,7 @@
 							</div>
 						</div>
 					</div>
+					@endforeach
 				</div>
 			</div>
 		</div>
