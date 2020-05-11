@@ -1,6 +1,9 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use Illuminate\Support\Facades\Auth;
+use TCG\Voyager\Facades\Voyager;
+use Illuminate\Support\Facades\Redirect;
 
 /*
 |--------------------------------------------------------------------------
@@ -19,6 +22,8 @@ d'un controller@methode(public function qui aura également pour paramètre de r
 */
 //Main page
 Route::get('/', 'HomeController@home')->name('home');
+
+
 Route::get('/contact', 'HomeController@contact')->name('contact');
 
 //shop
@@ -39,3 +44,13 @@ Route::get('/orders', 'HomeController@orders')->name('orders');
 Route::group(['prefix' => 'admin'], function () {
     Voyager::routes();
 });
+
+Auth::routes();
+
+
+Route::get('/logout', function(){
+    auth()->logout();
+    Session()->flush();
+
+    return Redirect::to('/');
+})->name('logout');

@@ -36,18 +36,21 @@
 
 
                         <ul class="nav navbar-nav menu_nav ml-auto">
+                            @guest
+                                
 							<li class="nav-item">
-                                <a class="nav-link" href="index.html">
+                                <a class="nav-link" href="{{route('register')}}">
                                     <i class="fas fa-user-plus"></i><br>
                                 Créer un compte
                             </a>
                         </li>
 							<li class="nav-item submenu dropdown">
-								<a href="#" class="nav-link">
+								<a href="{{route('login')}}" class="nav-link">
                                  <i class="fas fa-sign-in-alt"></i><br>
                                  Se connecter
                                 </a>
-							</li>
+                            </li>
+                            @else
 							<li class="nav-item">
                                 <a class="nav-link" href="{{route('orders')}}">
                                     <i class="fas fa-truck"></i><br>
@@ -55,11 +58,12 @@
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="contact.html">
+                                <a class="nav-link" href="{{route('logout')}}">
                                     <i class="fas fa-sign-out-alt"></i><br>
                                     Se déconnecter
                                 </a>
                             </li>
+                            @endguest
                             <li class="nav-item">
                                 <a class="nav-link" href="{{route('cart.index')}}">
                                     <i class="fas fa-shopping-cart"></i><br>
