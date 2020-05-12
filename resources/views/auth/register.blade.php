@@ -75,10 +75,10 @@
 		<div class="container">
 			<div class="breadcrumb-banner d-flex flex-wrap align-items-center justify-content-end">
 				<div class="col-first">
-					<h1>Login/Register</h1>
+					<h1>Création de Compte</h1>
 					<nav class="d-flex align-items-center">
 						<a href="index.html">Home<span class="lnr lnr-arrow-right"></span></a>
-						<a href="category.html">Login/Register</a>
+						<a href="category.html">Enregistrement</a>
 					</nav>
 				</div>
 			</div>
@@ -94,9 +94,9 @@
 					<div class="login_box_img">
 						<img class="img-fluid" src="img/login.jpg" alt="">
 						<div class="hover">
-							<h4>New to our website?</h4>
+							<h4>Vous avez déjà un Compte?</h4>
 							<p>There are advances being made in science and technology everyday, and a good example of this is the</p>
-							<a class="primary-btn" href="registration.html">Création de Compte</a>
+							<a class="primary-btn" href="{{route('login')}}">Connectez-vous</a>
 						</div>
 					</div>
 				</div>
@@ -127,7 +127,7 @@
 
                         
 
-                            <div class="col-md-12 form-gropup @error('password') is-invalid @enderror">
+                            <div class="col-md-12 form-group @error('password') is-invalid @enderror">
                                 <input type="password" class="form-control" id="password" name="password" placeholder="Votre Mot de Passe" value="{{ old('password') }}">
                                 @error('password')
                                 <span class="invalid-feedback" role="alert">
@@ -136,14 +136,14 @@
                             @enderror
                             </div>
                             
-                            <div class="col-md-12 form-gropup @error('password_confirmation') is-invalid @enderror">
+                            <div class="col-md-12 form-group @error('password_confirmation') is-invalid @enderror">
                                 <input type="password_confirmation" class="form-control" id="password_confirmation" name="password_confirmation" placeholder="Confirmer votre mot de passe" value="{{ old('password') }}">
                                 
 							</div>
 							
 							<div class="col-md-12 form-group">
-								<button type="submit" value="submit" class="primary-btn">Log In</button>
-								<a href="#">Forgot Password?</a>
+								<button type="submit" value="submit" class="primary-btn">Enregistrement</button>
+								
 							</div>
 						</form>
 					</div>
